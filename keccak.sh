@@ -35,4 +35,4 @@ patch /opt/bamt/common.pl <<.
 >         \$miner = "cgminer-keccak";
 .
 echo 'Keccak Miner Installed. '
-echo 'Please review you /etc/bamt/bamt.conf to enable.'
+echo 'Please review your /etc/bamt/bamt.conf to enable.'

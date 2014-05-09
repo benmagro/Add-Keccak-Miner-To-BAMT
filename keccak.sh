@@ -20,6 +20,7 @@ sleep 5
 clear
 cp example.conf /etc/bamt/cgminer-keccak.conf
 cd /etc/bamt/
+echo 'Patching /etc/bamt/bamt.conf'
 patch /etc/bamt/bamt.conf <<.
 115a116
 >   cgminer_opts: --api-listen --config /etc/bamt/cgminer-keccak.conf
@@ -28,5 +29,13 @@ patch /etc/bamt/bamt.conf <<.
 130a133
 >   miner-cgminer-keccak: 1
 .
+echo 'Patching /opt/bamt/common.pl'
+patch /opt/bamt/common.pl <<.
+1477a1478,1481
+>       }
+> 	elsif (${$conf}{'settings'}{'miner-cgminer-keccak'}) {
+>         $cmd = "cd /opt/miners/cgminer-keccak;/usr/bin/screen -d -m -S cgminer-keccak /opt/miners/cgminer-keccak/cgminer --keccak $args";
+>         $miner = "cgminer-keccak";
+.
 echo 'Keccak Miner Installed'
-echo 'Please review you /etc/bamt/bamt.conf to enable'ehco 'Notice! Change in your config, kernle to keccak, and keccak true.'
+echo 'Please review you /etc/bamt/bamt.conf to enable'

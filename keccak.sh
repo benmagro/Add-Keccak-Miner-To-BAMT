@@ -35,12 +35,12 @@ patch /opt/bamt/common.pl <<.
 >         \$miner = "cgminer-keccak";
 .
 cd /etc/bamt/
-patch /etc/bamt/example.conf <<.
+patch /etc/bamt/cgminer-keccak.conf <<.
 19a20,23
 > "api-listen": true,
 > "api-port": "4028",
 > "api-allow": "W:127.0.0.1",
 > 
 .
-echo 'Keccak Miner Installed. '
+echo 'Keccak Miner Installed.'
 echo 'Please review your /etc/bamt/bamt.conf to enable.'

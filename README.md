@@ -1,7 +1,7 @@
 Add-Keccak-Miner-To-BAMT
 ========================
 
-This is script will install a keccak algorythm miner within BAMT 1.6.0
+This is script will install a keccak algorithm miner within BAMT 1.6.0
 
 #Instruction
 

@@ -44,3 +44,4 @@ patch /etc/bamt/cgminer-keccak.conf <<.
 .
 echo 'Keccak Miner Installed.'
 echo 'Please review your /etc/bamt/bamt.conf to enable.'
+echo 'Configure /etc/bamt/cgminer-keccak.conf with pool'

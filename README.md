@@ -3,6 +3,12 @@ Add-Keccak-Miner-To-BAMT
 
 This is script will install a keccak algorithm miner within BAMT 1.6.0
 
+#Minable Coins
+
+CryptoMETH (METH)
+Maxcoin (MAX)
+365coin (365)
+
 #Instructions
 
 ```bash

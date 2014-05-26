@@ -16,6 +16,9 @@ git clone https://github.com/benmagro/Add-Keccak-Miner-To-BAMT.git
 cd Add-Keccak-Miner-To-BAMT/
 ./keccak.sh
 ```
+
+Then review your bamt.conf and you cgminer-keccak.conf
+
 ##Donate
 
 BTC: 1GeA7ZeKV5yH68EkMQCLb2ygm9K4qotT2x
